@@ -1,15 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+﻿
 namespace Calculadoras
 {
     public partial class CalculadoraVectores2D : Form
@@ -32,15 +21,17 @@ namespace Calculadoras
         private float rZ;
         private float rA;
 
+        Physics physics = new Physics();
+
         public CalculadoraVectores2D()
         {
             InitializeComponent();
         }
 
         // Boton para sumar.
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCalcular_Click(object sender, EventArgs e)
         {
-            guardarInputDelUsuario();
+            if (guardarInputDelUsuario() == -1) { return; }
 
             calcularAx();
             calcularAy();
@@ -50,47 +41,36 @@ namespace Calculadoras
 
             sumarVectores();
             conversion();
-            quadrants();
         }
 
         private void calcularAx()
         {
-            /* 
-              Formula para obtener x es
-                    x = r cos θ
-            */
-
-            Ax = (float)(Ar * Math.Cos(valorEnRadianes(Az)));
+            Ax = physics.calcularComponenteX(Ar, Az);
 
             label19.Visible = true;
             label12.Text = "A(" + Ar.ToString() + "," + Az.ToString() + ")";
-            label13.Text = "Ax = " + Ar.ToString() + " Cos " + Az.ToString() + " = " + Ax.ToString("F2");
+            label13.Text = "Ax = " + Ar.ToString() + " Cos " + Az.ToString() + " = " + Ax.ToString("F2"); // El parametro F2 es para mostrar solo dos posiciones decimales.
         }
 
         private void calcularAy()
         {
-            /* 
-              Formula para obtener y es
-                    y = r sen θ
-            */
-
-            Ay = (float)(Ar * Math.Sin(valorEnRadianes(Az)));
+            Ay = physics.calcularComponenteY(Ar, Az);
 
             label14.Text = "Ay = " + Ar.ToString() + " Sen " + Az.ToString() + " = " + Ay.ToString("F2");
         }
 
         private void calcularBx()
         {
-            Bx = (float)(Br * Math.Cos(valorEnRadianes(Bz)));
+            Bx = physics.calcularComponenteX(Br, Bz);
 
             label20.Visible = true;
             label17.Text = "B(" + Br.ToString() + "," + Bz.ToString() + ")";
-            label16.Text = "Bx = " + Br.ToString() + " Cos " + Bz.ToString() + " = " + Bx.ToString("F2"); // El parametro F2 es para mostrar solo dos posiciones decimales.
+            label16.Text = "Bx = " + Br.ToString() + " Cos " + Bz.ToString() + " = " + Bx.ToString("F2");
         }
 
         private void calcularBy()
         {
-            By = (float)(Br * Math.Sin(valorEnRadianes(Bz)));
+            By = physics.calcularComponenteY(Br, Bz);
 
             label15.Text = "By = " + Br.ToString() + " Sen " + Bz.ToString() + " = " + By.ToString("F2");
         }
@@ -103,75 +83,28 @@ namespace Calculadoras
             rX = Ax + Bx; //cambie resultado X y Y a una variable global para utilizar en otra funcion.
             rY = Ay + By;
 
-            lblResultadoFinal.Text = "R = (" + rX.ToString("F2") + "," + rY.ToString("F2") + ")";
+            lblResultadoSumaX.Text = "Rx = Ax + Bx = " + rX.ToString("F2");
+            lblResultadoSumaY.Text = "Ry = Ay + By = " + rY.ToString("F2");
+
         }
 
-        private float valorEnRadianes(float numero)
+        //La suma de vectores se van a utilizar para conseguir la magnitud y la longitud.
+        private void conversion()
         {
-            return (float)(numero * (Math.PI / 180.0));
+            rA = physics.calcularMagitud(rX, rY);
+
+            rZ = physics.calcularDireccion(rX, rY);
+
+            lblResultadoA.Text = "Ra = " + rA.ToString("F2");
+
+            lblResultadoZ.Text = "Rθ = " + rZ.ToString("F2");
+
+            lblResultadoFinal.Text = "R = (" + rA.ToString("F2") + "," + rZ.ToString("F2") + ")";
         }
 
-        #region Obtener Valores Del Usuario
-        // El proposito de este metodo es guardar el input del usuario en las variables globales: Ar, Az, Br, Bz.
-        // Para obtener el input hay que convertir el valor de string a float con validación de datos, por si el 
-        // usuario entra una letra o un caracter especial en ves de un valor numerico por equivocación.
-        private void guardarInputDelUsuario()
-        {
-            if (float.TryParse(aRInput.Text, out float Ar))
-            {
-                this.Ar = Ar;
-            }
-            else
-            {
-                MessageBox.Show("Asegurese de entrar un valor numerico. No puede incluir letras, caracteres especiales o vacio sin valor.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            if (float.TryParse(aZInput.Text, out float Az))
-            {
-                this.Az = Az;
-            }
-            else
-            {
-                MessageBox.Show("Asegurese de entrar un valor numerico. No puede incluir letras, caracteres especiales o vacio sin valor.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            if (float.TryParse(bZInput.Text, out float Bz))
-            {
-                this.Bz = Bz;
-            }
-            else
-            {
-                MessageBox.Show("Asegurese de entrar un valor numerico. No puede incluir letras, caracteres especiales o vacio sin valor.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            if (float.TryParse(bRInput.Text, out float Br))
-            {
-                this.Br = Br;
-            }
-            else
-            {
-                MessageBox.Show("Asegurese de entrar un valor numerico. No puede incluir letras, caracteres especiales o vacio sin valor.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            if (Ar == 0 && Az == 0 || Bz == 0 && Br == 0 || Ar < 0 || Az < 0 || Br < 0 || Bz < 0)
-            {
-                MessageBox.Show("Asegurese de no entrar valores negativos o vectores con dos 0", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            else
-            {
-
-            }
-        }
-        #endregion
-
+        #region Boton Para Hacer Reset
         // Boton para resetear variables y labels.
-        private void button2_Click(object sender, EventArgs e)
+        private void btnBorrar_Click(object sender, EventArgs e)
         {
             label12.Text = "";
             label13.Text = "";
@@ -183,8 +116,11 @@ namespace Calculadoras
             aZInput.Text = "";
             bRInput.Text = "";
             bZInput.Text = "";
+            lblResultadoSumaX.Text = "";
+            lblResultadoSumaY.Text = "";
+            lblResultadoA.Text = "";
+            lblResultadoZ.Text = "";
             lblResultadoFinal.Text = "";
-            lblRConversion.Text = "";
             label19.Visible = false;
             label20.Visible = false;
             label21.Visible = false;
@@ -192,30 +128,44 @@ namespace Calculadoras
 
             Ax = 0; Bx = 0; Bz = 0; Az = 0; Ay = 0; By = 0; Ar = 0; Br = 0;
         }
+        #endregion
 
-        //La suma de vectores se van a utilizar para conseguir la magnitud y la longitud.
-        private void conversion()
+        #region Obtener Valores Del Usuario
+        // El proposito de este metodo es guardar el input del usuario en las variables globales.
+        // Para obtener el input hay que convertir el valor de string a float con validación de datos, por si el 
+        // usuario entra una letra o un caracter especial en ves de un valor numerico.
+        private int guardarInputDelUsuario()
         {
-            rA = MathF.Sqrt(rX * rX + rY * rY);
-
-            rZ = MathF.Atan(rY / rX);
-        }
-
-        //Verifica en que cuadrante estan nuestra magnitud y longitud.
-        private void quadrants()
-        {
-            switch (rA, rZ)
+            if (!TryParse(aRInput.Text, out Ar) ||
+                !TryParse(aZInput.Text, out Az) ||
+                !TryParse(bZInput.Text, out Bz) ||
+                !TryParse(bRInput.Text, out Br))
             {
-                case ( > 0, > 0): // rA y rZ son positos. Van en el primer cuadrante.
-                    {
-                        lblRConversion.Text = "RA + RB = (" + rA.ToString("F2") + ", " + rZ.ToString("F2") + ")";
-                        break;
-                    }
-
-
+                return -1;
             }
 
+            if (Ar == 0 && Az == 0 || Bz == 0 && Br == 0 || Ar < 0 || Az < 0 || Br < 0 || Bz < 0)
+            {
+                MessageBox.Show("Asegurese de no entrar valores negativos o vectores con dos 0", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return -1;
+            }
+
+            return 1;
         }
+
+        private bool TryParse(string input, out float output)
+        {
+            if (float.TryParse(input, out output))
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Asegurese de entrar un valor numerico. No puede incluir letras, caracteres especiales o vacio sin valor.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+        }
+        #endregion
     }
 }
 
