@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +26,12 @@ namespace Calculadoras
         private float By;
         private float Ay;
 
+        private float rX;
+        private float rY;
+
+        private float rZ;
+        private float rA;
+
         public CalculadoraVectores2D()
         {
             InitializeComponent();
@@ -41,6 +49,8 @@ namespace Calculadoras
             calcularBy();
 
             sumarVectores();
+            conversion();
+            quadrants();
         }
 
         private void calcularAx()
@@ -72,7 +82,7 @@ namespace Calculadoras
         private void calcularBx()
         {
             Bx = (float)(Br * Math.Cos(valorEnRadianes(Bz)));
-            
+
             label20.Visible = true;
             label17.Text = "B(" + Br.ToString() + "," + Bz.ToString() + ")";
             label16.Text = "Bx = " + Br.ToString() + " Cos " + Bz.ToString() + " = " + Bx.ToString("F2"); // El parametro F2 es para mostrar solo dos posiciones decimales.
@@ -90,15 +100,15 @@ namespace Calculadoras
             label21.Visible = true;
             label22.Visible = true;
 
-            float resultadoX = Ax + Bx;
-            float resultadoY = Ay + By;
+            rX = Ax + Bx; //cambie resultado X y Y a una variable global para utilizar en otra funcion.
+            rY = Ay + By;
 
-            lblResultadoFinal.Text = "R = (" + resultadoX.ToString("F2") + "," + resultadoY.ToString("F2") + ")";
+            lblResultadoFinal.Text = "R = (" + rX.ToString("F2") + "," + rY.ToString("F2") + ")";
         }
 
         private float valorEnRadianes(float numero)
         {
-            return (float) (numero * (Math.PI / 180.0));
+            return (float)(numero * (Math.PI / 180.0));
         }
 
         #region Obtener Valores Del Usuario
@@ -146,6 +156,17 @@ namespace Calculadoras
                 MessageBox.Show("Asegurese de entrar un valor numerico. No puede incluir letras, caracteres especiales o vacio sin valor.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+
+            if (Ar == 0 && Az == 0 || Bz == 0 && Br == 0 || Ar < 0 || Az < 0 || Br < 0 || Bz < 0)
+            {
+                MessageBox.Show("Asegurese de no entrar valores negativos o vectores con dos 0", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            else
+            {
+
+            }
         }
         #endregion
 
@@ -163,6 +184,7 @@ namespace Calculadoras
             bRInput.Text = "";
             bZInput.Text = "";
             lblResultadoFinal.Text = "";
+            lblRConversion.Text = "";
             label19.Visible = false;
             label20.Visible = false;
             label21.Visible = false;
@@ -170,5 +192,30 @@ namespace Calculadoras
 
             Ax = 0; Bx = 0; Bz = 0; Az = 0; Ay = 0; By = 0; Ar = 0; Br = 0;
         }
+
+        //La suma de vectores se van a utilizar para conseguir la magnitud y la longitud.
+        private void conversion()
+        {
+            rA = MathF.Sqrt(rX * rX + rY * rY);
+
+            rZ = MathF.Atan(rY / rX);
+        }
+
+        //Verifica en que cuadrante estan nuestra magnitud y longitud.
+        private void quadrants()
+        {
+            switch (rA, rZ)
+            {
+                case ( > 0, > 0): // rA y rZ son positos. Van en el primer cuadrante.
+                    {
+                        lblRConversion.Text = "RA + RB = (" + rA.ToString("F2") + ", " + rZ.ToString("F2") + ")";
+                        break;
+                    }
+
+
+            }
+
+        }
     }
 }
+
