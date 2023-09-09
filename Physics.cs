@@ -32,10 +32,32 @@ namespace Calculadoras
         // La dirección es θ
         public float calcularDireccion(float x, float y)
         {
+            double angulo3 = 0;
+
             double angulo = Math.Atan(y / x);
             double anguloEnGrados = angulo * (180 / Math.PI);
 
-            return (float) anguloEnGrados + valorDeCuadrante(x, y);
+            if (x == 0 && y > 0)
+            {
+                angulo3 = 90 * (180 / Math.PI);
+            }
+            else if (x == 0 && y < 0)
+            {
+                angulo3 = 220 * (180 / Math.PI);
+            }
+            else if (x > 0 && y >= 0)
+            {
+                angulo3 = anguloEnGrados + valorDeCuadrante(x, y);
+            }
+            else if (x < 0 && y >= 0 || y < 0)
+            {
+                angulo3 = anguloEnGrados + 180;
+            }
+            else if (x > 0 && y < 0)
+            {
+                angulo3 = anguloEnGrados + 360;
+            }
+            return (float) angulo3;
         }
 
         // Devuelve el valor a sumar según el cuadrante que corresponden las coordenadas XY.

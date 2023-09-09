@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculadoras));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picIcon2 = new System.Windows.Forms.PictureBox();
+            this.picIcon1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -39,12 +41,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.displayPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picIcon2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIcon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.panel1.Controls.Add(this.picIcon2);
+            this.panel1.Controls.Add(this.picIcon1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.button3);
@@ -58,6 +65,28 @@
             this.panel1.Size = new System.Drawing.Size(227, 590);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // picIcon2
+            // 
+            this.picIcon2.BackColor = System.Drawing.Color.Transparent;
+            this.picIcon2.Image = global::Calculadoras.Properties.Resources._3d_cube_white;
+            this.picIcon2.Location = new System.Drawing.Point(3, 161);
+            this.picIcon2.Name = "picIcon2";
+            this.picIcon2.Size = new System.Drawing.Size(52, 50);
+            this.picIcon2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picIcon2.TabIndex = 8;
+            this.picIcon2.TabStop = false;
+            // 
+            // picIcon1
+            // 
+            this.picIcon1.BackColor = System.Drawing.Color.Transparent;
+            this.picIcon1.Image = global::Calculadoras.Properties.Resources.square_white;
+            this.picIcon1.Location = new System.Drawing.Point(3, 92);
+            this.picIcon1.Name = "picIcon1";
+            this.picIcon1.Size = new System.Drawing.Size(52, 44);
+            this.picIcon1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picIcon1.TabIndex = 7;
+            this.picIcon1.TabStop = false;
             // 
             // label2
             // 
@@ -85,48 +114,58 @@
             // 
             // button3
             // 
+            this.button3.AutoSize = true;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(-3, 197);
+            this.button3.Location = new System.Drawing.Point(0, 150);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(232, 92);
+            this.button3.Size = new System.Drawing.Size(227, 72);
             this.button3.TabIndex = 5;
-            this.button3.Text = "Calculadora de componentes vectores (Tres dimensiones)\r\n\r\n\r\n)";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Text = "Vectores (Tres dimensiones)";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(-3, 110);
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 78);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(232, 92);
+            this.button2.Size = new System.Drawing.Size(227, 72);
             this.button2.TabIndex = 4;
-            this.button2.Text = "Calculadora de componentes vectores (Dos dimensiones)\r\n\r\n\r\n)";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Text = "Vectores (Dos dimensiones)";
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Location = new System.Drawing.Point(12, 83);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 77);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(201, 1);
+            this.panel3.Padding = new System.Windows.Forms.Padding(30, 0, 30, 0);
+            this.panel3.Size = new System.Drawing.Size(227, 1);
             this.panel3.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Calculadoras.Properties.Resources._926361;
-            this.pictureBox1.Location = new System.Drawing.Point(139, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(138, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(75, 59);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -148,7 +187,8 @@
             this.displayPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.displayPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.displayPanel.AutoScroll = true;
+            this.displayPanel.BackColor = System.Drawing.Color.White;
             this.displayPanel.Location = new System.Drawing.Point(227, 0);
             this.displayPanel.Name = "displayPanel";
             this.displayPanel.Size = new System.Drawing.Size(698, 590);
@@ -167,6 +207,8 @@
             this.Text = "PHYS3300.PHYSICS FOR VIDEO GAMES - LABORATORIOS";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picIcon2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIcon1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -183,5 +225,7 @@
         private Panel panel6;
         private Button button3;
         private Label label2;
+        private PictureBox picIcon2;
+        private PictureBox picIcon1;
     }
 }
