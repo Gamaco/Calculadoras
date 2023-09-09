@@ -63,6 +63,26 @@ namespace Calculadoras.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3d_cube {
+            get {
+                object obj = ResourceManager.GetObject("3d-cube", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3d_cube_white {
+            get {
+                object obj = ResourceManager.GetObject("3d-cube-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _926361 {
             get {
                 object obj = ResourceManager.GetObject("926361", resourceCulture);
@@ -76,6 +96,26 @@ namespace Calculadoras.Properties {
         internal static System.Drawing.Bitmap calc_icon2 {
             get {
                 object obj = ResourceManager.GetObject("calc_icon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap square {
+            get {
+                object obj = ResourceManager.GetObject("square", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap square_white {
+            get {
+                object obj = ResourceManager.GetObject("square-white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
