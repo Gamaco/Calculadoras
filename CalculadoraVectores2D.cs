@@ -39,7 +39,7 @@ namespace Calculadoras
             calcularBx();
             calcularBy();
 
-            sumarVectores();
+            sumarORestaVectores();
             conversion();
         }
 
@@ -75,17 +75,33 @@ namespace Calculadoras
             label15.Text = "By = " + Br.ToString() + " Sen " + Bz.ToString() + " = " + By.ToString("F2");
         }
 
-        private void sumarVectores()
+        private void sumarORestaVectores()
         {
             label21.Visible = true;
             label22.Visible = true;
 
-            rX = Ax + Bx; //cambie resultado X y Y a una variable global para utilizar en otra funcion.
-            rY = Ay + By;
+            if (lbSumaOResta.SelectedItems.Contains("+"))
+            {
+                rX = Ax + Bx; //cambie resultado X y Y a una variable global para utilizar en otra funcion.
+                rY = Ay + By;
 
-            lblResultadoSumaX.Text = "Rx = Ax + Bx = " + rX.ToString("F2");
-            lblResultadoSumaY.Text = "Ry = Ay + By = " + rY.ToString("F2");
+                lblResultadoSumaX.Text = "Rx = Ax + Bx = " + rX.ToString("F2");
+                lblResultadoSumaY.Text = "Ry = Ay + By = " + rY.ToString("F2");
+            }
 
+            else if (lbSumaOResta.SelectedItems.Contains("-"))
+            {
+                rX = Ax - Bx; //cambie resultado X y Y a una variable global para utilizar en otra funcion.
+                rY = Ay - By;
+
+                lblResultadoSumaX.Text = "Rx = Ax - Bx = " + rX.ToString("F2");
+                lblResultadoSumaY.Text = "Ry = Ay - By = " + rY.ToString("F2");
+            }
+
+            else
+            {
+
+            }
         }
 
         //La suma de vectores se van a utilizar para conseguir la magnitud y la longitud.
