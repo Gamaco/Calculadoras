@@ -144,7 +144,7 @@ namespace Calculadoras
                 return -1;
             }
 
-            if (Ar == 0 && Az == 0 || Bz == 0 && Br == 0 || Ar < 0 || Az < 0 || Br < 0 || Bz < 0)
+            if (Ar == 0 || Br == 0 || Ar < 0 || Az < 0 || Br < 0 || Bz < 0)
             {
                 MessageBox.Show("Asegurese de no entrar valores negativos o vectores con dos 0", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return -1;

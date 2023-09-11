@@ -39,11 +39,11 @@ namespace Calculadoras
 
             if (x == 0 && y > 0)
             {
-                angulo3 = 90 * (180 / Math.PI);
+                angulo3 = 90;
             }
             else if (x == 0 && y < 0)
             {
-                angulo3 = 220 * (180 / Math.PI);
+                angulo3 = 270;
             }
             else if (x > 0 && y >= 0)
             {
@@ -69,7 +69,7 @@ namespace Calculadoras
                 case  ( < 0, > 0 ):  return 180;     // Cuadrante 2
                 case  ( < 0, < 0 ):  return 180;     // Cuadrante 3
                 case  ( > 0, < 0 ):  return 360;     // Cuadrante 4
-                default: return -1;                  // Error
+                default:  return 0;
             }
         }
     }
