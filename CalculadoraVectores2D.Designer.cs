@@ -60,7 +60,8 @@
             label14 = new Label();
             label13 = new Label();
             label12 = new Label();
-            lbSumaOResta = new ListBox();
+            btnSuma = new Button();
+            btnResta = new Button();
             pblResultados.SuspendLayout();
             SuspendLayout();
             // 
@@ -452,15 +453,25 @@
             label12.Size = new Size(0, 29);
             label12.TabIndex = 63;
             // 
-            // lbSumaOResta
+            // btnSuma
             // 
-            lbSumaOResta.FormattingEnabled = true;
-            lbSumaOResta.ItemHeight = 20;
-            lbSumaOResta.Items.AddRange(new object[] { "+", "-" });
-            lbSumaOResta.Location = new Point(370, 227);
-            lbSumaOResta.Name = "lbSumaOResta";
-            lbSumaOResta.Size = new Size(51, 24);
-            lbSumaOResta.TabIndex = 65;
+            btnSuma.Location = new Point(376, 197);
+            btnSuma.Name = "btnSuma";
+            btnSuma.Size = new Size(38, 29);
+            btnSuma.TabIndex = 66;
+            btnSuma.Text = "+";
+            btnSuma.UseVisualStyleBackColor = true;
+            btnSuma.Click += btnSuma_Click;
+            // 
+            // btnResta
+            // 
+            btnResta.Location = new Point(376, 245);
+            btnResta.Name = "btnResta";
+            btnResta.Size = new Size(38, 29);
+            btnResta.TabIndex = 67;
+            btnResta.Text = "-";
+            btnResta.UseVisualStyleBackColor = true;
+            btnResta.Click += btnResta_Click;
             // 
             // CalculadoraVectores2D
             // 
@@ -470,7 +481,8 @@
             BackColor = Color.White;
             ClientSize = new Size(798, 787);
             ControlBox = false;
-            Controls.Add(lbSumaOResta);
+            Controls.Add(btnResta);
+            Controls.Add(btnSuma);
             Controls.Add(pblResultados);
             Controls.Add(lblInstrucciones2);
             Controls.Add(lbl_instrucciones);
@@ -531,6 +543,7 @@
         private Label label14;
         private Label label13;
         private Label label12;
-        private ListBox lbSumaOResta;
+        private Button btnSuma;
+        private Button btnResta;
     }
 }

@@ -49,7 +49,7 @@ namespace Calculadoras
             {
                 angulo3 = anguloEnGrados + valorDeCuadrante(x, y);
             }
-            else if (x < 0 && y >= 0 || y < 0)
+            else if (x < 0 && y >= 0 || x < 0 && y < 0)
             {
                 angulo3 = anguloEnGrados + 180;
             }

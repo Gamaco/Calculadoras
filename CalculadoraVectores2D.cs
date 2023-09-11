@@ -21,6 +21,8 @@ namespace Calculadoras
         private float rZ;
         private float rA;
 
+        private Boolean operacion;
+
         Physics physics = new Physics();
 
         public CalculadoraVectores2D()
@@ -39,7 +41,7 @@ namespace Calculadoras
             calcularBx();
             calcularBy();
 
-            sumarORestaVectores();
+            sumaORestDeVectores();
             conversion();
         }
 
@@ -73,35 +75,6 @@ namespace Calculadoras
             By = physics.calcularComponenteY(Br, Bz);
 
             label15.Text = "By = " + Br.ToString() + " Sen " + Bz.ToString() + " = " + By.ToString("F2");
-        }
-
-        private void sumarORestaVectores()
-        {
-            label21.Visible = true;
-            label22.Visible = true;
-
-            if (lbSumaOResta.SelectedItems.Contains("+"))
-            {
-                rX = Ax + Bx; //cambie resultado X y Y a una variable global para utilizar en otra funcion.
-                rY = Ay + By;
-
-                lblResultadoSumaX.Text = "Rx = Ax + Bx = " + rX.ToString("F2");
-                lblResultadoSumaY.Text = "Ry = Ay + By = " + rY.ToString("F2");
-            }
-
-            else if (lbSumaOResta.SelectedItems.Contains("-"))
-            {
-                rX = Ax - Bx; //cambie resultado X y Y a una variable global para utilizar en otra funcion.
-                rY = Ay - By;
-
-                lblResultadoSumaX.Text = "Rx = Ax - Bx = " + rX.ToString("F2");
-                lblResultadoSumaY.Text = "Ry = Ay - By = " + rY.ToString("F2");
-            }
-
-            else
-            {
-
-            }
         }
 
         //La suma de vectores se van a utilizar para conseguir la magnitud y la longitud.
@@ -182,6 +155,36 @@ namespace Calculadoras
             }
         }
         #endregion
+
+        private void sumaORestDeVectores()
+        {
+
+            if (operacion == true)
+            {
+                rX = Ax - Bx;
+                rY = Ay - By;
+            }
+            else
+            {
+                rX = Ax + Bx;
+                rY = Ay + By;
+            }
+            lblResultadoSumaX.Text = "Rx = Ax - Bx = " + rX.ToString("F2");
+            lblResultadoSumaY.Text = "Ry = Ay - By = " + rY.ToString("F2");
+
+            label21.Visible = true;
+            label22.Visible = true;
+        }
+
+        private void btnResta_Click(object sender, EventArgs e)
+        {
+            operacion = true;
+        }
+
+        private void btnSuma_Click(object sender, EventArgs e)
+        {
+            operacion = false;
+        }
     }
 }
 
