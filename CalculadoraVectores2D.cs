@@ -185,6 +185,11 @@ namespace Calculadoras
         {
             operacion = false;
         }
+
+        private void lblInstrucciones2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

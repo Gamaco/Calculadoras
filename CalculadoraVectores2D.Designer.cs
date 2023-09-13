@@ -262,6 +262,7 @@
             lblInstrucciones2.TabIndex = 63;
             lblInstrucciones2.Text = "R representa la magnitud.\r\nθ representa la dirección.";
             lblInstrucciones2.TextAlign = ContentAlignment.TopCenter;
+            lblInstrucciones2.Click += lblInstrucciones2_Click;
             // 
             // pblResultados
             // 
