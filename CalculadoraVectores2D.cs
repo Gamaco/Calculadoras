@@ -21,7 +21,7 @@ namespace Calculadoras
         private float rZ;
         private float rA;
 
-        private Boolean operacion;
+        private Boolean operacion = false;
 
         Physics physics = new Physics();
 
@@ -30,8 +30,7 @@ namespace Calculadoras
             InitializeComponent();
         }
 
-        // Boton para sumar.
-        private void btnCalcular_Click(object sender, EventArgs e)
+        private void btnCalcular_Click_1(object sender, EventArgs e)
         {
             if (guardarInputDelUsuario() == -1) { return; }
 
@@ -93,7 +92,7 @@ namespace Calculadoras
 
         #region Boton Para Hacer Reset
         // Boton para resetear variables y labels.
-        private void btnBorrar_Click(object sender, EventArgs e)
+        private void btnBorrar_Click_1(object sender, EventArgs e)
         {
             label12.Text = "";
             label13.Text = "";
@@ -176,20 +175,13 @@ namespace Calculadoras
             label22.Visible = true;
         }
 
-        private void btnResta_Click(object sender, EventArgs e)
+        private void btnOperacion_Click_1(object sender, EventArgs e)
         {
-            operacion = true;
+            operacion = (operacion == true) ? false : true;
+
+            btnOperacion.Text = (operacion == true) ? "-" : "+";
         }
 
-        private void btnSuma_Click(object sender, EventArgs e)
-        {
-            operacion = false;
-        }
-
-        private void lblInstrucciones2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

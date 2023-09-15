@@ -28,808 +28,849 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnResta = new Button();
-            btnSuma = new Button();
-            lblInstrucciones2 = new Label();
-            lbl_instrucciones = new Label();
-            aRInput = new TextBox();
-            label3 = new Label();
-            label9 = new Label();
-            aZInput = new TextBox();
-            bZInput = new TextBox();
-            label4 = new Label();
-            label8 = new Label();
-            label5 = new Label();
-            bRInput = new TextBox();
-            label2 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            btnBorrar = new Button();
-            btnCalcular = new Button();
-            lblResultadoFinal = new Label();
-            lblResultadoZ = new Label();
-            lblResultadoSumaY = new Label();
-            lblResultadoA = new Label();
-            lblResultadoSumaX = new Label();
-            label15 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label12 = new Label();
-            pblResultados = new Panel();
-            lblResultadoAlfa = new Label();
-            lblResultadoBZ = new Label();
-            lblResultadoAz = new Label();
-            lblVectorR = new Label();
-            lblRθ = new Label();
-            lblRY = new Label();
-            lblRMagnitud = new Label();
-            label28 = new Label();
-            label29 = new Label();
-            lblRX = new Label();
-            label1 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label18 = new Label();
-            label23 = new Label();
-            label24 = new Label();
-            label25 = new Label();
-            label26 = new Label();
-            label27 = new Label();
-            lblResultadoBY = new Label();
-            lblResultadoBX = new Label();
-            lblValoresUsadosB = new Label();
-            lblResultadoAY = new Label();
-            lblResultadoAX = new Label();
-            lblValoresUsadosA = new Label();
-            label34 = new Label();
-            tbAZAlfaInput = new TextBox();
-            tbBZAlfaInput = new TextBox();
-            label35 = new Label();
-            pblResultados.SuspendLayout();
-            SuspendLayout();
-            // 
-            // btnResta
-            // 
-            btnResta.Location = new Point(481, 239);
-            btnResta.Name = "btnResta";
-            btnResta.Size = new Size(38, 29);
-            btnResta.TabIndex = 83;
-            btnResta.Text = "-";
-            btnResta.UseVisualStyleBackColor = true;
-            btnResta.Click += btnResta_Click;
-            // 
-            // btnSuma
-            // 
-            btnSuma.Location = new Point(481, 190);
-            btnSuma.Name = "btnSuma";
-            btnSuma.Size = new Size(38, 29);
-            btnSuma.TabIndex = 82;
-            btnSuma.Text = "+";
-            btnSuma.UseVisualStyleBackColor = true;
-            btnSuma.Click += btnSuma_Click;
+            this.lblInstrucciones2 = new System.Windows.Forms.Label();
+            this.lbl_instrucciones = new System.Windows.Forms.Label();
+            this.aRInput = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.aZInput = new System.Windows.Forms.TextBox();
+            this.bZInput = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.bRInput = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.lblResultadoFinal = new System.Windows.Forms.Label();
+            this.lblResultadoZ = new System.Windows.Forms.Label();
+            this.lblResultadoSumaY = new System.Windows.Forms.Label();
+            this.lblResultadoA = new System.Windows.Forms.Label();
+            this.lblResultadoSumaX = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pblResultados = new System.Windows.Forms.Panel();
+            this.lblResultadoAlfa = new System.Windows.Forms.Label();
+            this.lblResultadoBZ = new System.Windows.Forms.Label();
+            this.lblResultadoAz = new System.Windows.Forms.Label();
+            this.lblVectorR = new System.Windows.Forms.Label();
+            this.lblRθ = new System.Windows.Forms.Label();
+            this.lblRY = new System.Windows.Forms.Label();
+            this.lblRMagnitud = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.lblRX = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.lblResultadoBY = new System.Windows.Forms.Label();
+            this.lblResultadoBX = new System.Windows.Forms.Label();
+            this.lblValoresUsadosB = new System.Windows.Forms.Label();
+            this.lblResultadoAY = new System.Windows.Forms.Label();
+            this.lblResultadoAX = new System.Windows.Forms.Label();
+            this.lblValoresUsadosA = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.tbAZAlfaInput = new System.Windows.Forms.TextBox();
+            this.tbBZAlfaInput = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.btnOperacion = new System.Windows.Forms.Button();
+            this.pblResultados.SuspendLayout();
+            this.SuspendLayout();
             // 
             // lblInstrucciones2
             // 
-            lblInstrucciones2.Dock = DockStyle.Top;
-            lblInstrucciones2.Font = new Font("Arial Narrow", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblInstrucciones2.ForeColor = Color.FromArgb(64, 64, 64);
-            lblInstrucciones2.Location = new Point(0, 56);
-            lblInstrucciones2.Name = "lblInstrucciones2";
-            lblInstrucciones2.Size = new Size(999, 102);
-            lblInstrucciones2.TabIndex = 81;
-            lblInstrucciones2.Text = "R representa la magnitud.\r\nθ representa la dirección.\r\nα  representa el angulo.";
-            lblInstrucciones2.TextAlign = ContentAlignment.TopCenter;
+            this.lblInstrucciones2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblInstrucciones2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblInstrucciones2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblInstrucciones2.Location = new System.Drawing.Point(0, 70);
+            this.lblInstrucciones2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblInstrucciones2.Name = "lblInstrucciones2";
+            this.lblInstrucciones2.Size = new System.Drawing.Size(1249, 128);
+            this.lblInstrucciones2.TabIndex = 81;
+            this.lblInstrucciones2.Text = "R representa la magnitud.\r\nθ representa la dirección.\r\nα  representa el angulo.";
+            this.lblInstrucciones2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbl_instrucciones
             // 
-            lbl_instrucciones.Dock = DockStyle.Top;
-            lbl_instrucciones.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_instrucciones.Location = new Point(0, 0);
-            lbl_instrucciones.Name = "lbl_instrucciones";
-            lbl_instrucciones.Size = new Size(999, 56);
-            lbl_instrucciones.TabIndex = 80;
-            lbl_instrucciones.Text = "Entre las coordenadas polares para los vectores A y B.\r\n";
-            lbl_instrucciones.TextAlign = ContentAlignment.BottomCenter;
+            this.lbl_instrucciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_instrucciones.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_instrucciones.Location = new System.Drawing.Point(0, 0);
+            this.lbl_instrucciones.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_instrucciones.Name = "lbl_instrucciones";
+            this.lbl_instrucciones.Size = new System.Drawing.Size(1249, 70);
+            this.lbl_instrucciones.TabIndex = 80;
+            this.lbl_instrucciones.Text = "Entre las coordenadas polares para los vectores A y B.\r\n";
+            this.lbl_instrucciones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // aRInput
             // 
-            aRInput.Anchor = AnchorStyles.Top;
-            aRInput.BackColor = SystemColors.ButtonFace;
-            aRInput.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            aRInput.Location = new Point(115, 209);
-            aRInput.Margin = new Padding(3, 4, 3, 4);
-            aRInput.Name = "aRInput";
-            aRInput.Size = new Size(65, 38);
-            aRInput.TabIndex = 68;
-            aRInput.TextAlign = HorizontalAlignment.Center;
-            aRInput.WordWrap = false;
+            this.aRInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.aRInput.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.aRInput.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.aRInput.Location = new System.Drawing.Point(144, 265);
+            this.aRInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.aRInput.Name = "aRInput";
+            this.aRInput.Size = new System.Drawing.Size(80, 44);
+            this.aRInput.TabIndex = 68;
+            this.aRInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.aRInput.WordWrap = false;
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.Top;
-            label3.AutoSize = true;
-            label3.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.CornflowerBlue;
-            label3.Location = new Point(187, 209);
-            label3.Name = "label3";
-            label3.Size = new Size(53, 40);
-            label3.TabIndex = 69;
-            label3.Text = ", θ";
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label3.Location = new System.Drawing.Point(234, 261);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 47);
+            this.label3.TabIndex = 69;
+            this.label3.Text = ", θ";
             // 
             // label9
             // 
-            label9.Anchor = AnchorStyles.Top;
-            label9.AutoSize = true;
-            label9.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.ForeColor = Color.Tomato;
-            label9.Location = new Point(946, 209);
-            label9.Name = "label9";
-            label9.Size = new Size(28, 40);
-            label9.TabIndex = 79;
-            label9.Text = ")";
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.Tomato;
+            this.label9.Location = new System.Drawing.Point(1166, 261);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(34, 47);
+            this.label9.TabIndex = 79;
+            this.label9.Text = ")";
             // 
             // aZInput
             // 
-            aZInput.Anchor = AnchorStyles.Top;
-            aZInput.BackColor = SystemColors.ButtonFace;
-            aZInput.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            aZInput.Location = new Point(246, 209);
-            aZInput.Margin = new Padding(3, 4, 3, 4);
-            aZInput.Name = "aZInput";
-            aZInput.Size = new Size(65, 38);
-            aZInput.TabIndex = 70;
-            aZInput.TextAlign = HorizontalAlignment.Center;
-            aZInput.WordWrap = false;
+            this.aZInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.aZInput.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.aZInput.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.aZInput.Location = new System.Drawing.Point(308, 265);
+            this.aZInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.aZInput.Name = "aZInput";
+            this.aZInput.Size = new System.Drawing.Size(80, 44);
+            this.aZInput.TabIndex = 70;
+            this.aZInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.aZInput.WordWrap = false;
             // 
             // bZInput
             // 
-            bZInput.Anchor = AnchorStyles.Top;
-            bZInput.BackColor = SystemColors.ButtonFace;
-            bZInput.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            bZInput.Location = new Point(732, 209);
-            bZInput.Margin = new Padding(3, 4, 3, 4);
-            bZInput.Name = "bZInput";
-            bZInput.Size = new Size(65, 38);
-            bZInput.TabIndex = 78;
-            bZInput.TextAlign = HorizontalAlignment.Center;
+            this.bZInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bZInput.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.bZInput.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bZInput.Location = new System.Drawing.Point(915, 265);
+            this.bZInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bZInput.Name = "bZInput";
+            this.bZInput.Size = new System.Drawing.Size(80, 44);
+            this.bZInput.TabIndex = 78;
+            this.bZInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
-            label4.Anchor = AnchorStyles.Top;
-            label4.AutoSize = true;
-            label4.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.CornflowerBlue;
-            label4.Location = new Point(447, 205);
-            label4.Name = "label4";
-            label4.Size = new Size(28, 40);
-            label4.TabIndex = 71;
-            label4.Text = ")";
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label4.Location = new System.Drawing.Point(559, 261);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(34, 47);
+            this.label4.TabIndex = 71;
+            this.label4.Text = ")";
             // 
             // label8
             // 
-            label8.Anchor = AnchorStyles.Top;
-            label8.AutoSize = true;
-            label8.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = Color.Tomato;
-            label8.Location = new Point(674, 209);
-            label8.Name = "label8";
-            label8.Size = new Size(53, 40);
-            label8.TabIndex = 77;
-            label8.Text = ", θ";
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.Tomato;
+            this.label8.Location = new System.Drawing.Point(842, 261);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(64, 47);
+            this.label8.TabIndex = 77;
+            this.label8.Text = ", θ";
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.Top;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.CornflowerBlue;
-            label5.Location = new Point(49, 178);
-            label5.Name = "label5";
-            label5.Size = new Size(40, 27);
-            label5.TabIndex = 72;
-            label5.Text = "⇀";
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label5.Location = new System.Drawing.Point(61, 222);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 34);
+            this.label5.TabIndex = 72;
+            this.label5.Text = "⇀";
             // 
             // bRInput
             // 
-            bRInput.Anchor = AnchorStyles.Top;
-            bRInput.BackColor = SystemColors.ButtonFace;
-            bRInput.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            bRInput.Location = new Point(601, 209);
-            bRInput.Margin = new Padding(3, 4, 3, 4);
-            bRInput.Name = "bRInput";
-            bRInput.Size = new Size(65, 38);
-            bRInput.TabIndex = 76;
-            bRInput.TextAlign = HorizontalAlignment.Center;
+            this.bRInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bRInput.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.bRInput.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bRInput.Location = new System.Drawing.Point(751, 265);
+            this.bRInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bRInput.Name = "bRInput";
+            this.bRInput.Size = new System.Drawing.Size(80, 44);
+            this.bRInput.TabIndex = 76;
+            this.bRInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Top;
-            label2.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.CornflowerBlue;
-            label2.Location = new Point(49, 209);
-            label2.Name = "label2";
-            label2.Size = new Size(60, 45);
-            label2.TabIndex = 73;
-            label2.Text = "A(r";
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label2.Location = new System.Drawing.Point(61, 261);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 56);
+            this.label2.TabIndex = 73;
+            this.label2.Text = "A(r";
             // 
             // label7
             // 
-            label7.Anchor = AnchorStyles.Top;
-            label7.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = Color.Tomato;
-            label7.Location = new Point(532, 209);
-            label7.Name = "label7";
-            label7.Size = new Size(62, 43);
-            label7.TabIndex = 75;
-            label7.Text = "B(r";
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.Tomato;
+            this.label7.Location = new System.Drawing.Point(665, 261);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 54);
+            this.label7.TabIndex = 75;
+            this.label7.Text = "B(r";
             // 
             // label6
             // 
-            label6.Anchor = AnchorStyles.Top;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.Tomato;
-            label6.Location = new Point(532, 178);
-            label6.Name = "label6";
-            label6.Size = new Size(40, 27);
-            label6.TabIndex = 74;
-            label6.Text = "⇀";
-            label6.TextAlign = ContentAlignment.TopCenter;
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Tomato;
+            this.label6.Location = new System.Drawing.Point(665, 222);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 34);
+            this.label6.TabIndex = 74;
+            this.label6.Text = "⇀";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnBorrar
             // 
-            btnBorrar.Anchor = AnchorStyles.Top;
-            btnBorrar.BackColor = Color.FromArgb(38, 38, 38);
-            btnBorrar.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnBorrar.ForeColor = Color.White;
-            btnBorrar.Location = new Point(246, 723);
-            btnBorrar.Margin = new Padding(3, 4, 3, 4);
-            btnBorrar.Name = "btnBorrar";
-            btnBorrar.Size = new Size(254, 51);
-            btnBorrar.TabIndex = 85;
-            btnBorrar.Text = "Borrar";
-            btnBorrar.UseVisualStyleBackColor = false;
-            btnBorrar.Click += btnBorrar_Click;
+            this.btnBorrar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btnBorrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBorrar.ForeColor = System.Drawing.Color.White;
+            this.btnBorrar.Location = new System.Drawing.Point(308, 904);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(318, 64);
+            this.btnBorrar.TabIndex = 85;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = false;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click_1);
             // 
             // btnCalcular
             // 
-            btnCalcular.Anchor = AnchorStyles.Top;
-            btnCalcular.BackColor = Color.FromArgb(38, 38, 38);
-            btnCalcular.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCalcular.ForeColor = Color.White;
-            btnCalcular.Location = new Point(519, 723);
-            btnCalcular.Margin = new Padding(3, 4, 3, 4);
-            btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(254, 51);
-            btnCalcular.TabIndex = 84;
-            btnCalcular.Text = "Calcular";
-            btnCalcular.UseVisualStyleBackColor = false;
-            btnCalcular.Click += btnCalcular_Click;
+            this.btnCalcular.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btnCalcular.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCalcular.ForeColor = System.Drawing.Color.White;
+            this.btnCalcular.Location = new System.Drawing.Point(649, 904);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(318, 64);
+            this.btnCalcular.TabIndex = 84;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click_1);
             // 
             // lblResultadoFinal
             // 
-            lblResultadoFinal.Anchor = AnchorStyles.Top;
-            lblResultadoFinal.AutoSize = true;
-            lblResultadoFinal.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblResultadoFinal.Location = new Point(703, 635);
-            lblResultadoFinal.Name = "lblResultadoFinal";
-            lblResultadoFinal.Size = new Size(0, 24);
-            lblResultadoFinal.TabIndex = 100;
+            this.lblResultadoFinal.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoFinal.AutoSize = true;
+            this.lblResultadoFinal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoFinal.Location = new System.Drawing.Point(879, 794);
+            this.lblResultadoFinal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoFinal.Name = "lblResultadoFinal";
+            this.lblResultadoFinal.Size = new System.Drawing.Size(0, 29);
+            this.lblResultadoFinal.TabIndex = 100;
             // 
             // lblResultadoZ
             // 
-            lblResultadoZ.Anchor = AnchorStyles.Top;
-            lblResultadoZ.AutoSize = true;
-            lblResultadoZ.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResultadoZ.Location = new Point(703, 556);
-            lblResultadoZ.Name = "lblResultadoZ";
-            lblResultadoZ.Size = new Size(0, 23);
-            lblResultadoZ.TabIndex = 99;
+            this.lblResultadoZ.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoZ.AutoSize = true;
+            this.lblResultadoZ.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoZ.Location = new System.Drawing.Point(879, 695);
+            this.lblResultadoZ.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoZ.Name = "lblResultadoZ";
+            this.lblResultadoZ.Size = new System.Drawing.Size(0, 27);
+            this.lblResultadoZ.TabIndex = 99;
             // 
             // lblResultadoSumaY
             // 
-            lblResultadoSumaY.Anchor = AnchorStyles.Top;
-            lblResultadoSumaY.AutoSize = true;
-            lblResultadoSumaY.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResultadoSumaY.Location = new Point(703, 460);
-            lblResultadoSumaY.Name = "lblResultadoSumaY";
-            lblResultadoSumaY.Size = new Size(0, 23);
-            lblResultadoSumaY.TabIndex = 98;
+            this.lblResultadoSumaY.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoSumaY.AutoSize = true;
+            this.lblResultadoSumaY.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoSumaY.Location = new System.Drawing.Point(879, 575);
+            this.lblResultadoSumaY.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoSumaY.Name = "lblResultadoSumaY";
+            this.lblResultadoSumaY.Size = new System.Drawing.Size(0, 27);
+            this.lblResultadoSumaY.TabIndex = 98;
             // 
             // lblResultadoA
             // 
-            lblResultadoA.Anchor = AnchorStyles.Top;
-            lblResultadoA.AutoSize = true;
-            lblResultadoA.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResultadoA.Location = new Point(703, 520);
-            lblResultadoA.Name = "lblResultadoA";
-            lblResultadoA.Size = new Size(0, 23);
-            lblResultadoA.TabIndex = 97;
+            this.lblResultadoA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoA.AutoSize = true;
+            this.lblResultadoA.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoA.Location = new System.Drawing.Point(879, 650);
+            this.lblResultadoA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoA.Name = "lblResultadoA";
+            this.lblResultadoA.Size = new System.Drawing.Size(0, 27);
+            this.lblResultadoA.TabIndex = 97;
             // 
             // lblResultadoSumaX
             // 
-            lblResultadoSumaX.Anchor = AnchorStyles.Top;
-            lblResultadoSumaX.AutoSize = true;
-            lblResultadoSumaX.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResultadoSumaX.Location = new Point(703, 424);
-            lblResultadoSumaX.Name = "lblResultadoSumaX";
-            lblResultadoSumaX.Size = new Size(0, 23);
-            lblResultadoSumaX.TabIndex = 92;
+            this.lblResultadoSumaX.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoSumaX.AutoSize = true;
+            this.lblResultadoSumaX.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoSumaX.Location = new System.Drawing.Point(879, 530);
+            this.lblResultadoSumaX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoSumaX.Name = "lblResultadoSumaX";
+            this.lblResultadoSumaX.Size = new System.Drawing.Size(0, 27);
+            this.lblResultadoSumaX.TabIndex = 92;
             // 
             // label15
             // 
-            label15.Anchor = AnchorStyles.Top;
-            label15.AutoSize = true;
-            label15.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.Location = new Point(422, 460);
-            label15.Name = "label15";
-            label15.Size = new Size(0, 23);
-            label15.TabIndex = 91;
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(528, 575);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(0, 27);
+            this.label15.TabIndex = 91;
             // 
             // label16
             // 
-            label16.Anchor = AnchorStyles.Top;
-            label16.AutoSize = true;
-            label16.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label16.Location = new Point(422, 424);
-            label16.Name = "label16";
-            label16.Size = new Size(0, 23);
-            label16.TabIndex = 90;
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(528, 530);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(0, 27);
+            this.label16.TabIndex = 90;
             // 
             // label17
             // 
-            label17.Anchor = AnchorStyles.Top;
-            label17.AutoSize = true;
-            label17.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label17.ForeColor = Color.Tomato;
-            label17.Location = new Point(422, 365);
-            label17.Name = "label17";
-            label17.Size = new Size(0, 29);
-            label17.TabIndex = 89;
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.Tomato;
+            this.label17.Location = new System.Drawing.Point(528, 456);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(0, 34);
+            this.label17.TabIndex = 89;
             // 
             // label14
             // 
-            label14.Anchor = AnchorStyles.Top;
-            label14.AutoSize = true;
-            label14.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.Location = new Point(168, 460);
-            label14.Name = "label14";
-            label14.Size = new Size(0, 23);
-            label14.TabIndex = 88;
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(210, 575);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 27);
+            this.label14.TabIndex = 88;
             // 
             // label13
             // 
-            label13.Anchor = AnchorStyles.Top;
-            label13.AutoSize = true;
-            label13.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(168, 424);
-            label13.Name = "label13";
-            label13.Size = new Size(0, 23);
-            label13.TabIndex = 87;
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(210, 530);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 27);
+            this.label13.TabIndex = 87;
             // 
             // label12
             // 
-            label12.Anchor = AnchorStyles.Top;
-            label12.AutoSize = true;
-            label12.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.ForeColor = Color.CornflowerBlue;
-            label12.Location = new Point(168, 365);
-            label12.Name = "label12";
-            label12.Size = new Size(0, 29);
-            label12.TabIndex = 86;
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label12.Location = new System.Drawing.Point(210, 456);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(0, 34);
+            this.label12.TabIndex = 86;
             // 
             // pblResultados
             // 
-            pblResultados.Anchor = AnchorStyles.Top;
-            pblResultados.BackColor = SystemColors.ButtonFace;
-            pblResultados.BorderStyle = BorderStyle.FixedSingle;
-            pblResultados.Controls.Add(lblResultadoAlfa);
-            pblResultados.Controls.Add(lblResultadoBZ);
-            pblResultados.Controls.Add(lblResultadoAz);
-            pblResultados.Controls.Add(lblVectorR);
-            pblResultados.Controls.Add(lblRθ);
-            pblResultados.Controls.Add(lblRY);
-            pblResultados.Controls.Add(lblRMagnitud);
-            pblResultados.Controls.Add(label28);
-            pblResultados.Controls.Add(label29);
-            pblResultados.Controls.Add(lblRX);
-            pblResultados.Controls.Add(label1);
-            pblResultados.Controls.Add(label10);
-            pblResultados.Controls.Add(label11);
-            pblResultados.Controls.Add(label18);
-            pblResultados.Controls.Add(label23);
-            pblResultados.Controls.Add(label24);
-            pblResultados.Controls.Add(label25);
-            pblResultados.Controls.Add(label26);
-            pblResultados.Controls.Add(label27);
-            pblResultados.Controls.Add(lblResultadoBY);
-            pblResultados.Controls.Add(lblResultadoBX);
-            pblResultados.Controls.Add(lblValoresUsadosB);
-            pblResultados.Controls.Add(lblResultadoAY);
-            pblResultados.Controls.Add(lblResultadoAX);
-            pblResultados.Controls.Add(lblValoresUsadosA);
-            pblResultados.Location = new Point(116, 321);
-            pblResultados.Margin = new Padding(3, 4, 3, 4);
-            pblResultados.Name = "pblResultados";
-            pblResultados.Size = new Size(770, 394);
-            pblResultados.TabIndex = 101;
+            this.pblResultados.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pblResultados.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pblResultados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pblResultados.Controls.Add(this.lblResultadoAlfa);
+            this.pblResultados.Controls.Add(this.lblResultadoBZ);
+            this.pblResultados.Controls.Add(this.lblResultadoAz);
+            this.pblResultados.Controls.Add(this.lblVectorR);
+            this.pblResultados.Controls.Add(this.lblRθ);
+            this.pblResultados.Controls.Add(this.lblRY);
+            this.pblResultados.Controls.Add(this.lblRMagnitud);
+            this.pblResultados.Controls.Add(this.label28);
+            this.pblResultados.Controls.Add(this.label29);
+            this.pblResultados.Controls.Add(this.lblRX);
+            this.pblResultados.Controls.Add(this.label1);
+            this.pblResultados.Controls.Add(this.label10);
+            this.pblResultados.Controls.Add(this.label11);
+            this.pblResultados.Controls.Add(this.label18);
+            this.pblResultados.Controls.Add(this.label23);
+            this.pblResultados.Controls.Add(this.label24);
+            this.pblResultados.Controls.Add(this.label25);
+            this.pblResultados.Controls.Add(this.label26);
+            this.pblResultados.Controls.Add(this.label27);
+            this.pblResultados.Controls.Add(this.lblResultadoBY);
+            this.pblResultados.Controls.Add(this.lblResultadoBX);
+            this.pblResultados.Controls.Add(this.lblValoresUsadosB);
+            this.pblResultados.Controls.Add(this.lblResultadoAY);
+            this.pblResultados.Controls.Add(this.lblResultadoAX);
+            this.pblResultados.Controls.Add(this.lblValoresUsadosA);
+            this.pblResultados.Location = new System.Drawing.Point(145, 401);
+            this.pblResultados.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pblResultados.Name = "pblResultados";
+            this.pblResultados.Size = new System.Drawing.Size(962, 492);
+            this.pblResultados.TabIndex = 101;
             // 
             // lblResultadoAlfa
             // 
-            lblResultadoAlfa.Anchor = AnchorStyles.Top;
-            lblResultadoAlfa.AutoSize = true;
-            lblResultadoAlfa.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResultadoAlfa.Location = new Point(557, 267);
-            lblResultadoAlfa.Name = "lblResultadoAlfa";
-            lblResultadoAlfa.Size = new Size(0, 23);
-            lblResultadoAlfa.TabIndex = 87;
+            this.lblResultadoAlfa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoAlfa.AutoSize = true;
+            this.lblResultadoAlfa.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoAlfa.Location = new System.Drawing.Point(696, 334);
+            this.lblResultadoAlfa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoAlfa.Name = "lblResultadoAlfa";
+            this.lblResultadoAlfa.Size = new System.Drawing.Size(0, 27);
+            this.lblResultadoAlfa.TabIndex = 87;
             // 
             // lblResultadoBZ
             // 
-            lblResultadoBZ.Anchor = AnchorStyles.Top;
-            lblResultadoBZ.AutoSize = true;
-            lblResultadoBZ.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResultadoBZ.Location = new Point(272, 198);
-            lblResultadoBZ.Name = "lblResultadoBZ";
-            lblResultadoBZ.Size = new Size(0, 23);
-            lblResultadoBZ.TabIndex = 86;
+            this.lblResultadoBZ.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoBZ.AutoSize = true;
+            this.lblResultadoBZ.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoBZ.Location = new System.Drawing.Point(340, 248);
+            this.lblResultadoBZ.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoBZ.Name = "lblResultadoBZ";
+            this.lblResultadoBZ.Size = new System.Drawing.Size(0, 27);
+            this.lblResultadoBZ.TabIndex = 86;
             // 
             // lblResultadoAz
             // 
-            lblResultadoAz.Anchor = AnchorStyles.Top;
-            lblResultadoAz.AutoSize = true;
-            lblResultadoAz.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResultadoAz.Location = new Point(18, 198);
-            lblResultadoAz.Name = "lblResultadoAz";
-            lblResultadoAz.Size = new Size(0, 23);
-            lblResultadoAz.TabIndex = 85;
+            this.lblResultadoAz.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoAz.AutoSize = true;
+            this.lblResultadoAz.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoAz.Location = new System.Drawing.Point(22, 248);
+            this.lblResultadoAz.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoAz.Name = "lblResultadoAz";
+            this.lblResultadoAz.Size = new System.Drawing.Size(0, 27);
+            this.lblResultadoAz.TabIndex = 85;
             // 
             // lblVectorR
             // 
-            lblVectorR.Anchor = AnchorStyles.Top;
-            lblVectorR.AutoSize = true;
-            lblVectorR.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblVectorR.Location = new Point(557, 333);
-            lblVectorR.Name = "lblVectorR";
-            lblVectorR.Size = new Size(0, 24);
-            lblVectorR.TabIndex = 84;
+            this.lblVectorR.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblVectorR.AutoSize = true;
+            this.lblVectorR.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblVectorR.Location = new System.Drawing.Point(696, 416);
+            this.lblVectorR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVectorR.Name = "lblVectorR";
+            this.lblVectorR.Size = new System.Drawing.Size(0, 29);
+            this.lblVectorR.TabIndex = 84;
             // 
             // lblRθ
             // 
-            lblRθ.Anchor = AnchorStyles.Top;
-            lblRθ.AutoSize = true;
-            lblRθ.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRθ.Location = new Point(557, 234);
-            lblRθ.Name = "lblRθ";
-            lblRθ.Size = new Size(0, 23);
-            lblRθ.TabIndex = 83;
+            this.lblRθ.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblRθ.AutoSize = true;
+            this.lblRθ.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblRθ.Location = new System.Drawing.Point(696, 292);
+            this.lblRθ.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRθ.Name = "lblRθ";
+            this.lblRθ.Size = new System.Drawing.Size(0, 27);
+            this.lblRθ.TabIndex = 83;
             // 
             // lblRY
             // 
-            lblRY.Anchor = AnchorStyles.Top;
-            lblRY.AutoSize = true;
-            lblRY.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRY.Location = new Point(557, 138);
-            lblRY.Name = "lblRY";
-            lblRY.Size = new Size(0, 23);
-            lblRY.TabIndex = 82;
+            this.lblRY.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblRY.AutoSize = true;
+            this.lblRY.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblRY.Location = new System.Drawing.Point(696, 172);
+            this.lblRY.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRY.Name = "lblRY";
+            this.lblRY.Size = new System.Drawing.Size(0, 27);
+            this.lblRY.TabIndex = 82;
             // 
             // lblRMagnitud
             // 
-            lblRMagnitud.Anchor = AnchorStyles.Top;
-            lblRMagnitud.AutoSize = true;
-            lblRMagnitud.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRMagnitud.Location = new Point(557, 198);
-            lblRMagnitud.Name = "lblRMagnitud";
-            lblRMagnitud.Size = new Size(0, 23);
-            lblRMagnitud.TabIndex = 81;
+            this.lblRMagnitud.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblRMagnitud.AutoSize = true;
+            this.lblRMagnitud.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblRMagnitud.Location = new System.Drawing.Point(696, 248);
+            this.lblRMagnitud.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRMagnitud.Name = "lblRMagnitud";
+            this.lblRMagnitud.Size = new System.Drawing.Size(0, 27);
+            this.lblRMagnitud.TabIndex = 81;
             // 
             // label28
             // 
-            label28.Anchor = AnchorStyles.Top;
-            label28.AutoSize = true;
-            label28.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label28.ForeColor = Color.Black;
-            label28.Location = new Point(557, 43);
-            label28.Name = "label28";
-            label28.Size = new Size(129, 29);
-            label28.TabIndex = 80;
-            label28.Text = "Resultado";
-            label28.Visible = false;
+            this.label28.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(696, 54);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(156, 34);
+            this.label28.TabIndex = 80;
+            this.label28.Text = "Resultado";
+            this.label28.Visible = false;
             // 
             // label29
             // 
-            label29.Anchor = AnchorStyles.Top;
-            label29.BackColor = Color.Transparent;
-            label29.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label29.ForeColor = Color.Black;
-            label29.Location = new Point(553, 304);
-            label29.Name = "label29";
-            label29.Size = new Size(27, 29);
-            label29.TabIndex = 79;
-            label29.Text = "⇀";
-            label29.Visible = false;
+            this.label29.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Location = new System.Drawing.Point(691, 380);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(34, 36);
+            this.label29.TabIndex = 79;
+            this.label29.Text = "⇀";
+            this.label29.Visible = false;
             // 
             // lblRX
             // 
-            lblRX.Anchor = AnchorStyles.Top;
-            lblRX.AutoSize = true;
-            lblRX.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRX.Location = new Point(557, 102);
-            lblRX.Name = "lblRX";
-            lblRX.Size = new Size(0, 23);
-            lblRX.TabIndex = 78;
+            this.lblRX.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblRX.AutoSize = true;
+            this.lblRX.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblRX.Location = new System.Drawing.Point(696, 128);
+            this.lblRX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRX.Name = "lblRX";
+            this.lblRX.Size = new System.Drawing.Size(0, 27);
+            this.lblRX.TabIndex = 78;
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top;
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(838, 335);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 24);
-            label1.TabIndex = 77;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(1048, 419);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 29);
+            this.label1.TabIndex = 77;
             // 
             // label10
             // 
-            label10.Anchor = AnchorStyles.Top;
-            label10.AutoSize = true;
-            label10.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(838, 256);
-            label10.Name = "label10";
-            label10.Size = new Size(0, 23);
-            label10.TabIndex = 76;
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(1048, 320);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 27);
+            this.label10.TabIndex = 76;
             // 
             // label11
             // 
-            label11.Anchor = AnchorStyles.Top;
-            label11.AutoSize = true;
-            label11.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(838, 160);
-            label11.Name = "label11";
-            label11.Size = new Size(0, 23);
-            label11.TabIndex = 75;
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(1048, 200);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 27);
+            this.label11.TabIndex = 75;
             // 
             // label18
             // 
-            label18.Anchor = AnchorStyles.Top;
-            label18.AutoSize = true;
-            label18.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label18.Location = new Point(838, 220);
-            label18.Name = "label18";
-            label18.Size = new Size(0, 23);
-            label18.TabIndex = 74;
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(1048, 275);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(0, 27);
+            this.label18.TabIndex = 74;
             // 
             // label23
             // 
-            label23.Anchor = AnchorStyles.Top;
-            label23.AutoSize = true;
-            label23.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label23.ForeColor = Color.Black;
-            label23.Location = new Point(838, 65);
-            label23.Name = "label23";
-            label23.Size = new Size(129, 29);
-            label23.TabIndex = 73;
-            label23.Text = "Resultado";
-            label23.Visible = false;
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(1048, 81);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(156, 34);
+            this.label23.TabIndex = 73;
+            this.label23.Text = "Resultado";
+            this.label23.Visible = false;
             // 
             // label24
             // 
-            label24.Anchor = AnchorStyles.Top;
-            label24.BackColor = Color.Transparent;
-            label24.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label24.ForeColor = Color.Black;
-            label24.Location = new Point(830, 304);
-            label24.Name = "label24";
-            label24.Size = new Size(27, 29);
-            label24.TabIndex = 72;
-            label24.Text = "⇀";
-            label24.Visible = false;
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(1038, 380);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(34, 36);
+            this.label24.TabIndex = 72;
+            this.label24.Text = "⇀";
+            this.label24.Visible = false;
             // 
             // label25
             // 
-            label25.Anchor = AnchorStyles.Top;
-            label25.BackColor = Color.Transparent;
-            label25.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label25.ForeColor = Color.Tomato;
-            label25.Location = new Point(265, 38);
-            label25.Name = "label25";
-            label25.Size = new Size(27, 29);
-            label25.TabIndex = 71;
-            label25.Text = "⇀";
-            label25.Visible = false;
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label25.ForeColor = System.Drawing.Color.Tomato;
+            this.label25.Location = new System.Drawing.Point(331, 48);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(34, 36);
+            this.label25.TabIndex = 71;
+            this.label25.Text = "⇀";
+            this.label25.Visible = false;
             // 
             // label26
             // 
-            label26.Anchor = AnchorStyles.Top;
-            label26.BackColor = Color.Transparent;
-            label26.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label26.ForeColor = Color.CornflowerBlue;
-            label26.Location = new Point(13, 38);
-            label26.Name = "label26";
-            label26.Size = new Size(27, 29);
-            label26.TabIndex = 70;
-            label26.Text = "⇀";
-            label26.Visible = false;
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label26.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label26.Location = new System.Drawing.Point(16, 48);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(34, 36);
+            this.label26.TabIndex = 70;
+            this.label26.Text = "⇀";
+            this.label26.Visible = false;
             // 
             // label27
             // 
-            label27.Anchor = AnchorStyles.Top;
-            label27.AutoSize = true;
-            label27.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label27.Location = new Point(838, 124);
-            label27.Name = "label27";
-            label27.Size = new Size(0, 23);
-            label27.TabIndex = 69;
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label27.Location = new System.Drawing.Point(1048, 155);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(0, 27);
+            this.label27.TabIndex = 69;
             // 
             // lblResultadoBY
             // 
-            lblResultadoBY.Anchor = AnchorStyles.Top;
-            lblResultadoBY.AutoSize = true;
-            lblResultadoBY.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResultadoBY.Location = new Point(272, 159);
-            lblResultadoBY.Name = "lblResultadoBY";
-            lblResultadoBY.Size = new Size(0, 23);
-            lblResultadoBY.TabIndex = 68;
+            this.lblResultadoBY.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoBY.AutoSize = true;
+            this.lblResultadoBY.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoBY.Location = new System.Drawing.Point(340, 199);
+            this.lblResultadoBY.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoBY.Name = "lblResultadoBY";
+            this.lblResultadoBY.Size = new System.Drawing.Size(0, 27);
+            this.lblResultadoBY.TabIndex = 68;
             // 
             // lblResultadoBX
             // 
-            lblResultadoBX.Anchor = AnchorStyles.Top;
-            lblResultadoBX.AutoSize = true;
-            lblResultadoBX.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResultadoBX.Location = new Point(272, 123);
-            lblResultadoBX.Name = "lblResultadoBX";
-            lblResultadoBX.Size = new Size(0, 23);
-            lblResultadoBX.TabIndex = 67;
+            this.lblResultadoBX.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoBX.AutoSize = true;
+            this.lblResultadoBX.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoBX.Location = new System.Drawing.Point(340, 154);
+            this.lblResultadoBX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoBX.Name = "lblResultadoBX";
+            this.lblResultadoBX.Size = new System.Drawing.Size(0, 27);
+            this.lblResultadoBX.TabIndex = 67;
             // 
             // lblValoresUsadosB
             // 
-            lblValoresUsadosB.Anchor = AnchorStyles.Top;
-            lblValoresUsadosB.AutoSize = true;
-            lblValoresUsadosB.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblValoresUsadosB.ForeColor = Color.Tomato;
-            lblValoresUsadosB.Location = new Point(272, 64);
-            lblValoresUsadosB.Name = "lblValoresUsadosB";
-            lblValoresUsadosB.Size = new Size(0, 29);
-            lblValoresUsadosB.TabIndex = 66;
+            this.lblValoresUsadosB.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblValoresUsadosB.AutoSize = true;
+            this.lblValoresUsadosB.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblValoresUsadosB.ForeColor = System.Drawing.Color.Tomato;
+            this.lblValoresUsadosB.Location = new System.Drawing.Point(340, 80);
+            this.lblValoresUsadosB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblValoresUsadosB.Name = "lblValoresUsadosB";
+            this.lblValoresUsadosB.Size = new System.Drawing.Size(0, 34);
+            this.lblValoresUsadosB.TabIndex = 66;
             // 
             // lblResultadoAY
             // 
-            lblResultadoAY.Anchor = AnchorStyles.Top;
-            lblResultadoAY.AutoSize = true;
-            lblResultadoAY.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResultadoAY.Location = new Point(18, 159);
-            lblResultadoAY.Name = "lblResultadoAY";
-            lblResultadoAY.Size = new Size(0, 23);
-            lblResultadoAY.TabIndex = 65;
+            this.lblResultadoAY.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoAY.AutoSize = true;
+            this.lblResultadoAY.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoAY.Location = new System.Drawing.Point(22, 199);
+            this.lblResultadoAY.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoAY.Name = "lblResultadoAY";
+            this.lblResultadoAY.Size = new System.Drawing.Size(0, 27);
+            this.lblResultadoAY.TabIndex = 65;
             // 
             // lblResultadoAX
             // 
-            lblResultadoAX.Anchor = AnchorStyles.Top;
-            lblResultadoAX.AutoSize = true;
-            lblResultadoAX.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResultadoAX.Location = new Point(18, 123);
-            lblResultadoAX.Name = "lblResultadoAX";
-            lblResultadoAX.Size = new Size(0, 23);
-            lblResultadoAX.TabIndex = 64;
+            this.lblResultadoAX.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblResultadoAX.AutoSize = true;
+            this.lblResultadoAX.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultadoAX.Location = new System.Drawing.Point(22, 154);
+            this.lblResultadoAX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultadoAX.Name = "lblResultadoAX";
+            this.lblResultadoAX.Size = new System.Drawing.Size(0, 27);
+            this.lblResultadoAX.TabIndex = 64;
             // 
             // lblValoresUsadosA
             // 
-            lblValoresUsadosA.Anchor = AnchorStyles.Top;
-            lblValoresUsadosA.AutoSize = true;
-            lblValoresUsadosA.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblValoresUsadosA.ForeColor = Color.CornflowerBlue;
-            lblValoresUsadosA.Location = new Point(18, 64);
-            lblValoresUsadosA.Name = "lblValoresUsadosA";
-            lblValoresUsadosA.Size = new Size(0, 29);
-            lblValoresUsadosA.TabIndex = 63;
+            this.lblValoresUsadosA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblValoresUsadosA.AutoSize = true;
+            this.lblValoresUsadosA.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblValoresUsadosA.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblValoresUsadosA.Location = new System.Drawing.Point(22, 80);
+            this.lblValoresUsadosA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblValoresUsadosA.Name = "lblValoresUsadosA";
+            this.lblValoresUsadosA.Size = new System.Drawing.Size(0, 34);
+            this.lblValoresUsadosA.TabIndex = 63;
             // 
             // label34
             // 
-            label34.Anchor = AnchorStyles.Top;
-            label34.AutoSize = true;
-            label34.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label34.ForeColor = Color.CornflowerBlue;
-            label34.Location = new Point(320, 209);
-            label34.Name = "label34";
-            label34.Size = new Size(56, 40);
-            label34.TabIndex = 102;
-            label34.Text = ", α";
+            this.label34.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label34.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label34.Location = new System.Drawing.Point(400, 261);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(67, 47);
+            this.label34.TabIndex = 102;
+            this.label34.Text = ", α";
             // 
             // tbAZAlfaInput
             // 
-            tbAZAlfaInput.Anchor = AnchorStyles.Top;
-            tbAZAlfaInput.BackColor = SystemColors.ButtonFace;
-            tbAZAlfaInput.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            tbAZAlfaInput.Location = new Point(382, 209);
-            tbAZAlfaInput.Margin = new Padding(3, 4, 3, 4);
-            tbAZAlfaInput.Name = "tbAZAlfaInput";
-            tbAZAlfaInput.Size = new Size(65, 38);
-            tbAZAlfaInput.TabIndex = 103;
-            tbAZAlfaInput.TextAlign = HorizontalAlignment.Center;
-            tbAZAlfaInput.WordWrap = false;
+            this.tbAZAlfaInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbAZAlfaInput.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbAZAlfaInput.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbAZAlfaInput.Location = new System.Drawing.Point(478, 265);
+            this.tbAZAlfaInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbAZAlfaInput.Name = "tbAZAlfaInput";
+            this.tbAZAlfaInput.Size = new System.Drawing.Size(80, 44);
+            this.tbAZAlfaInput.TabIndex = 103;
+            this.tbAZAlfaInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbAZAlfaInput.WordWrap = false;
             // 
             // tbBZAlfaInput
             // 
-            tbBZAlfaInput.Anchor = AnchorStyles.Top;
-            tbBZAlfaInput.BackColor = SystemColors.ButtonFace;
-            tbBZAlfaInput.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            tbBZAlfaInput.Location = new Point(875, 209);
-            tbBZAlfaInput.Margin = new Padding(3, 4, 3, 4);
-            tbBZAlfaInput.Name = "tbBZAlfaInput";
-            tbBZAlfaInput.Size = new Size(65, 38);
-            tbBZAlfaInput.TabIndex = 105;
-            tbBZAlfaInput.TextAlign = HorizontalAlignment.Center;
+            this.tbBZAlfaInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbBZAlfaInput.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tbBZAlfaInput.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbBZAlfaInput.Location = new System.Drawing.Point(1078, 265);
+            this.tbBZAlfaInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbBZAlfaInput.Name = "tbBZAlfaInput";
+            this.tbBZAlfaInput.Size = new System.Drawing.Size(80, 44);
+            this.tbBZAlfaInput.TabIndex = 105;
+            this.tbBZAlfaInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label35
             // 
-            label35.Anchor = AnchorStyles.Top;
-            label35.AutoSize = true;
-            label35.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label35.ForeColor = Color.Tomato;
-            label35.Location = new Point(816, 209);
-            label35.Name = "label35";
-            label35.Size = new Size(56, 40);
-            label35.TabIndex = 104;
-            label35.Text = ", α";
+            this.label35.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label35.ForeColor = System.Drawing.Color.Tomato;
+            this.label35.Location = new System.Drawing.Point(1003, 261);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(67, 47);
+            this.label35.TabIndex = 104;
+            this.label35.Text = ", α";
+            // 
+            // btnOperacion
+            // 
+            this.btnOperacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnOperacion.BackColor = System.Drawing.Color.White;
+            this.btnOperacion.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnOperacion.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnOperacion.ForeColor = System.Drawing.Color.Black;
+            this.btnOperacion.Location = new System.Drawing.Point(595, 264);
+            this.btnOperacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnOperacion.Name = "btnOperacion";
+            this.btnOperacion.Size = new System.Drawing.Size(62, 44);
+            this.btnOperacion.TabIndex = 106;
+            this.btnOperacion.Text = "+";
+            this.btnOperacion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnOperacion.UseVisualStyleBackColor = false;
+            this.btnOperacion.Click += new System.EventHandler(this.btnOperacion_Click);
             // 
             // CalculadoraVectores3D
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(999, 787);
-            ControlBox = false;
-            Controls.Add(tbBZAlfaInput);
-            Controls.Add(label35);
-            Controls.Add(tbAZAlfaInput);
-            Controls.Add(label34);
-            Controls.Add(lblResultadoFinal);
-            Controls.Add(lblResultadoZ);
-            Controls.Add(lblResultadoSumaY);
-            Controls.Add(lblResultadoA);
-            Controls.Add(lblResultadoSumaX);
-            Controls.Add(label15);
-            Controls.Add(label16);
-            Controls.Add(label17);
-            Controls.Add(label14);
-            Controls.Add(label13);
-            Controls.Add(label12);
-            Controls.Add(btnBorrar);
-            Controls.Add(btnCalcular);
-            Controls.Add(btnResta);
-            Controls.Add(btnSuma);
-            Controls.Add(lblInstrucciones2);
-            Controls.Add(lbl_instrucciones);
-            Controls.Add(aRInput);
-            Controls.Add(label3);
-            Controls.Add(label9);
-            Controls.Add(aZInput);
-            Controls.Add(bZInput);
-            Controls.Add(label4);
-            Controls.Add(label8);
-            Controls.Add(label5);
-            Controls.Add(bRInput);
-            Controls.Add(label2);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(pblResultados);
-            FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "CalculadoraVectores3D";
-            Text = "CalculadoraVectores3D";
-            pblResultados.ResumeLayout(false);
-            pblResultados.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1249, 984);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnOperacion);
+            this.Controls.Add(this.tbBZAlfaInput);
+            this.Controls.Add(this.label35);
+            this.Controls.Add(this.tbAZAlfaInput);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.lblResultadoFinal);
+            this.Controls.Add(this.lblResultadoZ);
+            this.Controls.Add(this.lblResultadoSumaY);
+            this.Controls.Add(this.lblResultadoA);
+            this.Controls.Add(this.lblResultadoSumaX);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.btnBorrar);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.lblInstrucciones2);
+            this.Controls.Add(this.lbl_instrucciones);
+            this.Controls.Add(this.aRInput);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.aZInput);
+            this.Controls.Add(this.bZInput);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.bRInput);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.pblResultados);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "CalculadoraVectores3D";
+            this.Text = "CalculadoraVectores3D";
+            this.pblResultados.ResumeLayout(false);
+            this.pblResultados.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
-
-        private Button btnResta;
-        private Button btnSuma;
         private Label lblInstrucciones2;
         private Label lbl_instrucciones;
         private TextBox aRInput;
@@ -887,5 +928,6 @@
         private Label lblResultadoAz;
         private Label lblResultadoBZ;
         private Label lblResultadoAlfa;
+        private Button btnOperacion;
     }
 }

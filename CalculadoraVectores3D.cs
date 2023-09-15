@@ -44,7 +44,7 @@ namespace Calculadoras
             InitializeComponent();
         }
 
-        private void btnCalcular_Click(object sender, EventArgs e)
+        private void btnCalcular_Click_1(object sender, EventArgs e)
         {
             if (guardarInputDelUsuario() == -1) { return; }
 
@@ -60,6 +60,7 @@ namespace Calculadoras
             conversion();
         }
 
+        #region Guardar Input Del Usuario
         private int guardarInputDelUsuario()
         {
             if (!TryParse(aRInput.Text, out Ar) ||
@@ -99,6 +100,7 @@ namespace Calculadoras
                 return false;
             }
         }
+        #endregion
 
         private void calcularAx()
         {
@@ -182,17 +184,15 @@ namespace Calculadoras
             label29.Visible = true;
             label28.Visible = true;
         }
-        private void btnSuma_Click(object sender, EventArgs e)
+
+        private void btnOperacion_Click(object sender, EventArgs e)
         {
-            operacion = false;
+            operacion = (operacion == true) ? false : true;
+
+            btnOperacion.Text = (operacion == true) ? "-" : "+";
         }
 
-        private void btnResta_Click(object sender, EventArgs e)
-        {
-            operacion = true;
-        }
-
-        private void btnBorrar_Click(object sender, EventArgs e)
+        private void btnBorrar_Click_1(object sender, EventArgs e)
         {
             lblValoresUsadosA.Text = "";
             lblResultadoAX.Text = "";
@@ -221,5 +221,6 @@ namespace Calculadoras
 
             Ax = 0; Bx = 0; Bzeta = 0; Azeta = 0; AzA = 0; BzA = 0; Ay = 0; By = 0; Ar = 0; Br = 0;
         }
+
     }
 }
