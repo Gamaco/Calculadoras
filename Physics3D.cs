@@ -23,7 +23,7 @@ public class Physics3D
         return 0;
     }
 
-
+    // Calcular el valor de X
     public float calcularComponenteX(double magnitud, double distancia)
     {
         double distanciaEnGrados = distancia * (Math.PI / 180);
@@ -36,6 +36,14 @@ public class Physics3D
         double distanciaEnGrados = distancia * (Math.PI / 180);
         return (float)(magnitud * Math.Sin(distanciaEnGrados));
     }
+
+    // Calcular el valor de Z
+    public float calcularComponenteZ(double magnitud, double angulo)
+    {
+        double distanciaEnGrados = angulo * (Math.PI / 180);
+        return (float)(magnitud * Math.Cos(distanciaEnGrados));
+    }
+
 
     // La magnitud es A
     public float calcularMagitud(double x, double y)

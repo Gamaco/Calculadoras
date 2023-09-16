@@ -82,7 +82,7 @@ namespace Calculadoras
                 return -1;
             }
 
-            else if (0 <= AzA && AzA <= 180 || 0 <= BzA && BzA <= 180)
+            else if (0 > AzA && AzA > 180 || 0 > BzA && BzA > 180)
             {
                 MessageBox.Show("Asegurese que el alfa no sea menor de 0 o mayor de 180.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return -1;
@@ -123,9 +123,9 @@ namespace Calculadoras
 
         private void calcularAz()
         {
-            Az = physics.calcularComponenteZ(Ar, Azeta, Az);
+            Az = physics.calcularComponenteZ(Ar, AzA);
 
-            lblResultadoAz.Text = "Az = " + Ar.ToString() + " Cos " + AzA.ToString() + " = " + AzA.ToString("F2");
+            lblResultadoAz.Text = "Az = " + Ar.ToString() + " Cos " + AzA.ToString() + " = " + Az.ToString("F2");
         }
 
         private void calcularBx()
@@ -141,14 +141,14 @@ namespace Calculadoras
         {
             By = physics.calcularComponenteY(Br, Bzeta); //, Bz
 
-            lblResultadoBZ.Text = "By = " + Br.ToString() + " Sen " + Bzeta.ToString() + " = " + By.ToString("F2");
+            lblResultadoBY.Text = "By = " + Br.ToString() + " Sen " + Bzeta.ToString() + " = " + By.ToString("F2");
         }
 
         private void calcularBz()
         {
-            By = physics.calcularComponenteY(Br, Bzeta, Bz);
+            Bz = physics.calcularComponenteZ(Br, BzA);
 
-            lblResultadoBZ.Text = "Bz = " + Br.ToString() + " Cos " + Bzeta.ToString() + " = " + BzA.ToString("F2");
+            lblResultadoBZ.Text = "Bz = " + Br.ToString() + " Cos " + BzA.ToString() + " = " + Bz.ToString("F2");
         }
 
         //La suma de vectores se van a utilizar para conseguir la magnitud y la longitud.
