@@ -10,7 +10,7 @@ public class Physics3D
     
     public float calcularComponenteZ(float Ar, float Azeta, float Az)
     {
-
+        return 0;
     }
 
 
@@ -77,7 +77,5 @@ public class Physics3D
         }
   
     }
-}
-
 }
 

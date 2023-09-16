@@ -35,6 +35,9 @@ namespace Calculadoras
         private float rA;
         private float rAlfa;
 
+        private float Az;
+        private float Bz;
+
         private Boolean operacion;
 
         Physics3D physics = new Physics3D();
