@@ -37,7 +37,7 @@ namespace Calculadoras
 
         private Boolean operacion;
 
-        Physics physics = new Physics();
+        Physics3D physics = new Physics3D();
 
         public CalculadoraVectores3D()
         {
@@ -120,7 +120,7 @@ namespace Calculadoras
 
         private void calcularAz()
         {
-            //Az = physics.calcularComponenteZ(Ar, Azeta, Az);
+            Az = physics.calcularComponenteZ(Ar, Azeta, Az);
 
             lblResultadoAz.Text = "Az = " + Ar.ToString() + " Cos " + AzA.ToString() + " = " + AzA.ToString("F2");
         }
