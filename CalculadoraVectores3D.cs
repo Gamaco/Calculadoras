@@ -146,7 +146,7 @@ namespace Calculadoras
 
         private void calcularBz()
         {
-            //By = physics.calcularComponenteY(Br, Bzeta, Bz);
+            By = physics.calcularComponenteY(Br, Bzeta, Bz);
 
             lblResultadoBZ.Text = "Bz = " + Br.ToString() + " Cos " + Bzeta.ToString() + " = " + BzA.ToString("F2");
         }
@@ -158,7 +158,7 @@ namespace Calculadoras
 
             rZ = physics.calcularDireccion(rX, rY); //, rAlfa
 
-            //rAlfa = physics.calcularAngulo(rX, rY, rAlfa);
+            rAlfa = physics.calcularAngulo(rX, rY, rAlfa);
 
             lblResultadoA.Text = "Ra = " + rA.ToString("F2");
 

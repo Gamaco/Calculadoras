@@ -7,6 +7,16 @@ public class Physics3D
 
 
 	}
+
+    public float calcularAngulo(float rX,float rY,float rAlfa)
+    {
+        return 0;
+    }
+
+    public float calcularComponenteY(float Br, float Bzeta,float Bz)
+    {
+        return 0;
+    }
     
     public float calcularComponenteZ(float Ar, float Azeta, float Az)
     {
