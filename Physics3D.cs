@@ -8,19 +8,14 @@ public class Physics3D
 
 	}
 
-    public float calcularAngulo(float rX,float rY,float rAlfa)
+    // Alfa
+    public float calcularAngulo(float rX,float rY,float R)
     {
-        return 0;
-    }
+        float sum = (float) (Math.Pow(rX, 2) + Math.Pow(rY, 2));
+        float sqrt = (float) Math.Sqrt(sum);
+        float angulo = (float) ( Math.Asin(sqrt / R) );
+        return angulo;
 
-    public float calcularComponenteY(float Br, float Bzeta,float Bz)
-    {
-        return 0;
-    }
-    
-    public float calcularComponenteZ(float Ar, float Azeta, float Az)
-    {
-        return 0;
     }
 
     // Calcular el valor de X
@@ -46,9 +41,9 @@ public class Physics3D
 
 
     // La magnitud es A
-    public float calcularMagitud(double x, double y)
+    public float calcularMagitud(double x, double y, double z)
     {
-        return MathF.Sqrt((float)(x * x + y * y));
+        return MathF.Sqrt((float)(x * x + y * y + z * z));
     }
 
     // La dirección es θ

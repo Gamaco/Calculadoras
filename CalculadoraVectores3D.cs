@@ -34,6 +34,7 @@ namespace Calculadoras
         private float rZ;
         private float rA;
         private float rAlfa;
+        private float rTheta;
 
         private float Az;
         private float Bz;
@@ -133,7 +134,7 @@ namespace Calculadoras
             Bx = physics.calcularComponenteX(Br, Bzeta); //, Bz
 
             label25.Visible = true;
-            lblValoresUsadosB.Text = "B(" + Br.ToString() + "," + Bzeta.ToString() + ")";
+            lblValoresUsadosB.Text = "B(" + Br.ToString() + "," + Bzeta.ToString() + "," + BzA.ToString() + ")";
             lblResultadoBX.Text = "Bx = " + Br.ToString() + " Cos " + Bzeta.ToString() + " = " + Bx.ToString("F2");
         }
 
@@ -154,19 +155,23 @@ namespace Calculadoras
         //La suma de vectores se van a utilizar para conseguir la magnitud y la longitud.
         private void conversion()
         {
-            rA = physics.calcularMagitud(rX, rY); //, rAlfa
+            rZ = Az + Bz;
 
-            rZ = physics.calcularDireccion(rX, rY); //, rAlfa
+            rA = physics.calcularMagitud(rX, rY, rZ);
+              
+            rTheta = physics.calcularDireccion(rX, rY);
 
-            rAlfa = physics.calcularAngulo(rX, rY, rAlfa);
+            rAlfa = physics.calcularAngulo(rX, rY, rA);
 
-            lblResultadoA.Text = "Ra = " + rA.ToString("F2");
+            lblMagnitud.Text = "R = " + "√" + rX.ToString("F2") + "² +" + rY.ToString("F2") + "² +" + rZ.ToString("F2") + "²" + " = " + rA.ToString("F2");
 
-            lblResultadoZ.Text = "Rθ = " + rZ.ToString("F2");
+            lblResultadoRz.Text = "Rz = " + Az.ToString("F2") + " + " + Bz.ToString("F2") + " = " + rZ.ToString("F2");
 
-            lblResultadoAlfa.Text = "Ra = " + rAlfa.ToString("F2");
+            lblResultadoAlfa.Text = "α = " + "Asin( √" + Math.Pow(rX, 2).ToString("F2") + " + " + Math.Pow(rY, 2).ToString("F2") + " / " + rA.ToString("F2") + " )" + " = " + rAlfa.ToString("F2");
 
-            lblVectorR.Text = "R = (" + rA.ToString("F2") + "," + rZ.ToString("F2") + "," + rAlfa.ToString() + ")";
+            lblThetaResultado.Text = "θ = " + rTheta.ToString("F2");
+
+            lblVectorR.Text = "R = (" + rA.ToString("F2") + "," + rZ.ToString("F2") + "," + rAlfa.ToString("F2") + ")";
         }
         private void sumaORestDeVectores()
         {
@@ -181,8 +186,8 @@ namespace Calculadoras
                 rX = Ax + Bx;
                 rY = Ay + By;
             }
-            lblResultadoSumaX.Text = "Rx = Ax - Bx = " + rX.ToString("F2");
-            lblResultadoSumaY.Text = "Ry = Ay - By = " + rY.ToString("F2");
+            lblRSumaX.Text = "Rx = Ax - Bx = " + rX.ToString("F2");
+            lblRSumaY.Text = "Ry = Ay - By = " + rY.ToString("F2");
 
             label29.Visible = true;
             label28.Visible = true;
@@ -211,19 +216,26 @@ namespace Calculadoras
             bZInput.Text = "";
             tbAZAlfaInput.Text = "";
             tbBZAlfaInput.Text = "";
-            lblRX.Text = "";
-            lblRY.Text = "";
-            lblRMagnitud.Text = "";
-            lblRθ.Text = "";
             lblResultadoAlfa.Text = "";
             lblVectorR.Text = "";
+            lblResultadoBZ.Text = "";
+            lblResultadoAlfa.Text = "";
+            lblThetaResultado.Text = "";
+            lblMagnitud.Text = "";
+            lblResultadoRz.Text = "";
+            lblRSumaY.Text = "";
+            lblRSumaX.Text = "";
             label26.Visible = false;
             label25.Visible = false;
             label29.Visible = false;
             label28.Visible = false;
 
-            Ax = 0; Bx = 0; Bzeta = 0; Azeta = 0; AzA = 0; BzA = 0; Ay = 0; By = 0; Ar = 0; Br = 0;
+            Ax = 0; Bx = 0; Bzeta = 0; Azeta = 0; AzA = 0; BzA = 0; Ay = 0; By = 0; Ar = 0; Br = 0; rTheta = 0; Bz = 0; Az = 0; 
         }
 
+        private void pblResultados_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

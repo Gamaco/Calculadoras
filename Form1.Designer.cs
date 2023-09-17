@@ -63,7 +63,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(324, 983);
+            this.panel1.Size = new System.Drawing.Size(324, 1032);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -98,7 +98,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(57, 877);
+            this.label2.Location = new System.Drawing.Point(57, 926);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 54);
@@ -111,7 +111,7 @@
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.Location = new System.Drawing.Point(17, 840);
+            this.panel6.Location = new System.Drawing.Point(17, 889);
             this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(287, 2);
@@ -202,7 +202,7 @@
             this.displayPanel.Location = new System.Drawing.Point(324, 0);
             this.displayPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.displayPanel.Name = "displayPanel";
-            this.displayPanel.Size = new System.Drawing.Size(1249, 984);
+            this.displayPanel.Size = new System.Drawing.Size(1249, 1033);
             this.displayPanel.TabIndex = 1;
             // 
             // Calculadoras
@@ -210,7 +210,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1574, 983);
+            this.ClientSize = new System.Drawing.Size(1574, 1032);
             this.Controls.Add(this.displayPanel);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
