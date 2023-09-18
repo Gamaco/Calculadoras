@@ -14,7 +14,8 @@ public class Physics3D
         float sum = (float) (Math.Pow(rX, 2) + Math.Pow(rY, 2));
         float sqrt = (float) Math.Sqrt(sum);
         float angulo = (float) ( Math.Asin(sqrt / R) );
-        return angulo;
+        float grado = (float) angulo * (180 / (float) Math.PI);
+        return grado;
 
     }
 
