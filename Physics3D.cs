@@ -9,14 +9,17 @@ public class Physics3D
 	}
 
     // Alfa
-    public float calcularAngulo(float rX,float rY,float R)
+    public float calcularAngulo(float rX,float rY,float R, float rZ)
     {
         float sum = (float) (Math.Pow(rX, 2) + Math.Pow(rY, 2));
         float sqrt = (float) Math.Sqrt(sum);
         float angulo = (float) ( Math.Asin(sqrt / R) );
         float grado = (float) angulo * (180 / (float) Math.PI);
+        if (rZ < 0)
+        {
+            grado += 90;
+        }
         return grado;
-
     }
 
     // Calcular el valor de X

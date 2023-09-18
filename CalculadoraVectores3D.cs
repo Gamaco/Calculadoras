@@ -161,7 +161,7 @@ namespace Calculadoras
               
             rTheta = physics.calcularDireccion(rX, rY);
 
-            rAlfa = physics.calcularAngulo(rX, rY, rA); 
+            rAlfa = physics.calcularAngulo(rX, rY, rA, rZ); 
 
             lblMagnitud.Text = "R = " + "√" + rX.ToString("F2") + "² +" + rY.ToString("F2") + "² +" + rZ.ToString("F2") + "²" + " = " + rA.ToString("F2");
 
